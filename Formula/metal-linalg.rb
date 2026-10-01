@@ -1,21 +1,19 @@
 # metal-linalg, from the tap c0rmac/metal-linalg:
 #
 #   brew tap c0rmac/metal-linalg
-#   brew install --HEAD metal-linalg
+#   brew install metal-linalg
 #
 # Building from source does not need the Metal shader compiler: the build
 # uses the metallibs committed under shaders/prebuilt when it is missing,
 # which it is in Homebrew's build environment.
 #
-# No release has been tagged yet, so the formula builds the main branch
-# (--HEAD). On the first release, add the stable source above `head`, as this
-# tap's README describes:
-#
-#   url "https://github.com/c0rmac/metal-linalg/archive/refs/tags/v2.0.0.tar.gz"
-#   sha256 "<the tarball's checksum>"
+# `url` and `sha256` are set by metal-linalg's Release workflow on every
+# release; `brew install --HEAD metal-linalg` builds the main branch instead.
 class MetalLinalg < Formula
   desc "QR, symmetric eigendecomposition and SVD on Apple GPUs, for MLX"
   homepage "https://github.com/c0rmac/metal-linalg"
+  url "https://github.com/c0rmac/metal-linalg/archive/refs/tags/v2.0.0.tar.gz"
+  sha256 "c35917b4e8bc6cd0ad004d24ead35bcf5920e5f734d639efcf26ad5df5e225e5"
   head "https://github.com/c0rmac/metal-linalg.git", branch: "main"
 
   depends_on "cmake" => :build
