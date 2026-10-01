@@ -1,6 +1,7 @@
 # metal-linalg, from the tap c0rmac/metal-linalg:
 #
 #   brew tap c0rmac/metal-linalg
+#   brew trust c0rmac/metal-linalg
 #   brew install metal-linalg
 #
 # Building from source does not need the Metal shader compiler: the build

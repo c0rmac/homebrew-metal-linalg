@@ -18,6 +18,13 @@ First tap this repository, so that Homebrew knows its formula:
 brew tap c0rmac/metal-linalg
 ```
 
+Homebrew 7 and later load formulas from a third-party tap only once you trust
+it:
+
+```bash
+brew trust c0rmac/metal-linalg
+```
+
 Then install metal-linalg:
 
 ```bash
@@ -68,7 +75,8 @@ automatically:
 depends_on "c0rmac/metal-linalg/metal-linalg"
 ```
 
-Installing the dependent formula then installs metal-linalg automatically.
+Installing the dependent formula then installs metal-linalg automatically,
+once this tap is trusted too (`brew trust c0rmac/metal-linalg`).
 
 Homebrew builds have no network access, so a project that otherwise fetches
 metal-linalg's source with CMake's `FetchContent` must use the installed
