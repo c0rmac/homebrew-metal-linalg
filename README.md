@@ -44,8 +44,9 @@ target_link_libraries(my_app PRIVATE metal_linalg::metal_linalg)
 ```
 
 That covers the C++ API on MLX arrays and the C API on plain buffers. The
-Python and Swift packages are installed with `pip` and Swift Package Manager
-instead; see [metal-linalg's README](https://github.com/c0rmac/metal-linalg#using-it).
+[Python](https://github.com/c0rmac/metal-linalg#python) and
+[Swift](https://github.com/c0rmac/metal-linalg#swift) packages are installed
+with `pip` and Swift Package Manager instead, as metal-linalg's README describes.
 
 ## Update and uninstall
 
