@@ -15,6 +15,7 @@ class MetalLinalg < Formula
   homepage "https://github.com/c0rmac/metal-linalg"
   url "https://github.com/c0rmac/metal-linalg/archive/refs/tags/v2.0.0.tar.gz"
   sha256 "c35917b4e8bc6cd0ad004d24ead35bcf5920e5f734d639efcf26ad5df5e225e5"
+  license "MIT"
   head "https://github.com/c0rmac/metal-linalg.git", branch: "main"
 
   depends_on "cmake" => :build
