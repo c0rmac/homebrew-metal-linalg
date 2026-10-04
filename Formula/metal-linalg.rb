@@ -13,8 +13,8 @@
 class MetalLinalg < Formula
   desc "QR, symmetric eigendecomposition and SVD on Apple GPUs, for MLX"
   homepage "https://github.com/c0rmac/metal-linalg"
-  url "https://github.com/c0rmac/metal-linalg/archive/refs/tags/v2.12.0.tar.gz"
-  sha256 "f6e5fa221611b870f692b117fc45a18b247a0d2228e6e04b0b3fc7ca233a1e38"
+  url "https://github.com/c0rmac/metal-linalg/archive/refs/tags/v2.12.1.tar.gz"
+  sha256 "9d9c5fa64734b125fb4faa9cc4686c616b5a5c0319ea1852c410646fd3e96033"
   license "MIT"
   head "https://github.com/c0rmac/metal-linalg.git", branch: "main"
 
